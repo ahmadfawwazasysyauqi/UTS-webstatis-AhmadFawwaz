@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujian Tengah Semester - Auth Split-Screen</title>
+    <!-- Pemanggilan CSS Eksternal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="split-layout">
+        
+        <!-- Kolom Kiri: Ilustrasi / Branding -->
+        <section class="illustration-col" aria-label="Branding Artwork">
+            <img src="assets/images/artwork.jpg" alt="Artistic Branding Background">
+        </section>
+
+        <!-- Kolom Kanan: Formulir Login -->
+        <section class="form-col" aria-label="Login Form Section">
+            <div class="form-container">
+                <!-- Logo Perusahaan -->
+                <div class="logo">
+                    <img src="assets/images/logo.jpg" alt="Logo Perusahaan" style="width: 140px; height: auto;">
+                </div>
+                
+                <div class="form-header">
+                    <h1>Welcome Back</h1>
+                    <p>Silakan masuk ke akun Anda untuk melanjutkan.</p>
+                </div>
+
+                <form action="#" method="POST">
+                    <!-- Tombol SSO Google dengan aria-label -->
+                    <button type="button" class="btn-sso" aria-label="Sign in with Google account">
+                        <img src="assets/icon/goggle-icon.jpg" alt="Google Icon" style="width: 20px; height: 20px; border-radius: 50%;"> 
+                        Sign in with Google
+                    </button>
+
+                    <!-- Divider -->
+                    <div class="divider">
+                        <span>or</span>
+                    </div>
+
+                    <!-- Input Email/Username -->
+                    <div class="form-group">
+                        <label for="username">Email/Username</label>
+                        <input type="text" id="username" name="username" required placeholder="Masukkan email atau username">
+                    </div>
+
+                    <!-- Input Password -->
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required placeholder="••••••••">
+                    </div>
+
+                    <!-- Remember Me & Forgot Password -->
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" name="remember"> Remember Me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+
+                    <!-- Tombol Eksekusi Utama -->
+                    <button type="submit" class="btn-primary">Sign In</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
